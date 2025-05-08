@@ -1,5 +1,5 @@
 # 💻 Atividade Prática - Lógica de Programação em Python
-      ## 7 Days of Code - Python & Dados 📊🐍
+## 7 Days of Code - Python & Dados 📊🐍
 
 Análise de dados de empréstimos de livros da UFRN, realizada em Python, com visualizações, manipulações e exportação em HTML.
 
@@ -21,14 +21,6 @@ A atividade teve como objetivo introduzir os conceitos básicos da lógica de pr
 
 ---
 
-## 🚀 Como visualizar o notebook
-
-O notebook completo está muito grande para ser renderizado diretamente pelo GitHub.  
-Você pode visualizá-lo de forma interativa no Google Colab:  
-**Basta fazer o download de uma cópia do arquivo e abri-lo em seu Google Colab.**
-
----
-
 ## 👨‍🏫 Referência do Desafio
 
 Este projeto foi baseado no desafio **"7 Days of Code - Python & Dados"**, idealizado pelo professor **Fernando Masanori**, promovido pela **Alura**.
@@ -47,22 +39,6 @@ Este projeto foi baseado no desafio **"7 Days of Code - Python & Dados"**, ideal
 - Lógica sequencial  
 
 ---
-
-## 📈 Desenvolvimento
-
-Abaixo estão capturas de tela do código desenvolvido:
-
-### 🧾 Parte 1: Entrada de Dados
-![Entrada de Dados](./IMG_4630.png)
-
-### 🧾 Parte 2: Atribuição de Pontos
-![Atribuição de Pontos](./IMG_4631.png)
-
-### 🧾 Parte 3: Exibição dos Dados
-![Exibição dos Dados](./IMG_4632.png)
-
-### 🧾 Parte 4: Resultado Final
-![Resultado Final](./IMG_4633.png)
 
 ---
 ---
