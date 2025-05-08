@@ -1,52 +1,121 @@
-# Desafio 7 Days of Code - Python com Pandas
+# 💻 Atividade Prática - Lógica de Programação em Python
+      ## 7 Days of Code - Python & Dados 📊🐍
 
-Este repositório contém os desafios realizados durante o programa **7 Days of Code** promovido pela **Alura**, com foco no uso da biblioteca **Pandas** para análise e manipulação de dados em **Python**.
+Análise de dados de empréstimos de livros da UFRN, realizada em Python, com visualizações, manipulações e exportação em HTML.
 
-A proposta é desenvolver habilidades práticas por meio de exercícios diários, construindo um repertório sólido de conhecimento em manipulação de dados.
 
 ---
 
-## Dias do Desafio
+## 🎯 Objetivo
 
-### Dia 1 - Importação de Dados
-- Importação de arquivos CSV usando `read_csv()`.
-- Visualização das primeiras linhas com `head()`.
-- Análise básica com `info()` e `describe()`.
-
-### Dia 2 - Primeiras Manipulações
-- Seleção de colunas e filtros.
-- Tratamento de valores ausentes (`dropna()`, `fillna()`).
-- Criação de colunas e aplicação de funções com `apply()` e `lambda`.
-
-### Dia 3 - *[Descreva aqui quando completar]*
-
-### Dia 4 - *[Descreva aqui quando completar]*
-
-### Dia 5 - *[Descreva aqui quando completar]*
-
-### Dia 6 - *[Descreva aqui quando completar]*
-
-### Dia 7 - *[Descreva aqui quando completar]*
+A atividade teve como objetivo introduzir os conceitos básicos da lógica de programação utilizando a linguagem Python, desenvolvendo um pequeno sistema interativo para simular a criação de um personagem de jogo.  
 
 ---
 
-## Tecnologias utilizadas
-- Python 3.x
-- Pandas
-- Jupyter Notebook (para visualização e execução dos códigos)
+## 📁 Estrutura do Projeto
+
+```
+7days-of-python/
+└── analise_completa.ipynb
+```
 
 ---
 
-## Sobre mim
+## 🚀 Como visualizar o notebook
 
-Este repositório faz parte do meu portfólio de aprendizado em **Ciência de Dados** e **Python**.  
-Estou registrando minha evolução diária neste desafio para consolidar conhecimentos e compartilhar minha jornada com quem também está aprendendo.
-
-Desenvolvido por **Daniella Trindade**
-
-[LinkedIn](https://www.linkedin.com/) *(adicione seu link)*  
-[Portfólio (opcional)](https://www.seuportifolio.com)
+O notebook completo está muito grande para ser renderizado diretamente pelo GitHub.  
+Você pode visualizá-lo de forma interativa no Google Colab:  
+**Basta fazer o download de uma cópia do arquivo e abri-lo em seu Google Colab.**
 
 ---
 
+## 👨‍🏫 Referência do Desafio
 
+Este projeto foi baseado no desafio **"7 Days of Code - Python & Dados"**, idealizado pelo professor **Fernando Masanori**, promovido pela **Alura**.
+
+🔗 Repositório original do desafio: [https://github.com/fmasanori/7days-of-code-python-pandas](https://github.com/fmasanori/7days-of-code-python-pandas)
+
+---
+
+## 🧠 Conteúdo Aplicado
+
+- Declaração de variáveis  
+- Entrada de dados com `input()`  
+- Tipagem com `int()`, `float()`, `str()`  
+- Impressão de mensagens com `print()`  
+- Operadores aritméticos  
+- Lógica sequencial  
+
+---
+
+## 📈 Desenvolvimento
+
+Abaixo estão capturas de tela do código desenvolvido:
+
+### 🧾 Parte 1: Entrada de Dados
+![Entrada de Dados](./IMG_4630.png)
+
+### 🧾 Parte 2: Atribuição de Pontos
+![Atribuição de Pontos](./IMG_4631.png)
+
+### 🧾 Parte 3: Exibição dos Dados
+![Exibição dos Dados](./IMG_4632.png)
+
+### 🧾 Parte 4: Resultado Final
+![Resultado Final](./IMG_4633.png)
+
+---
+---
+
+## 📊 Etapas Realizadas
+
+- 📥 Importação e leitura dos dados de múltiplos arquivos .csv  
+- 🧹 Tratamento e padronização de colunas  
+- 📈 Análise exploratória de dados  
+- 📦 Geração de gráficos com Seaborn e Matplotlib  
+- 🧾 Criação de tabelas pivotadas  
+- 🌐 Exportação de resultados em HTML estilizado  
+
+---
+
+## 🎨 Estilo visual
+
+Para manter a identidade visual pessoal, todos os gráficos e elementos HTML seguem a paleta:
+
+- **Fundo:** Preto (`#000000`)  
+- **Texto:** Cinza claro (`#BFBFBF`)  
+- **Destaques:** Rosa choque (`#FF007F`)  
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- Python 3.10+  
+- Google Colab  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Plotly  
+- HTML + CSS (para exportação de tabelas)  
+
+
+## ✅ Conclusão
+
+Durante essa atividade, foi possível aplicar os conhecimentos adquiridos em sala de aula na prática, por meio da criação de um código simples, porém funcional. Aprendi a utilizar variáveis, entradas de dados, operadores e comandos de exibição no Python. Essa prática ajudou a fortalecer o raciocínio lógico e a familiarização com a linguagem Python.
+
+---
+
+## 📌 Observação
+
+Este repositório faz parte das atividades avaliativas da disciplina de Lógica de Programação.
+
+---
+
+---
+
+## ✍️ Autoria
+
+Projeto desenvolvido por **Daniella Trindade** como desafio da Alura - *7 Days of Code - Python & Dados*.
+
+📧 danifernandestrindade@gmail.com  
+🔗 [LinkedIn](#) | [GitHub](#)
