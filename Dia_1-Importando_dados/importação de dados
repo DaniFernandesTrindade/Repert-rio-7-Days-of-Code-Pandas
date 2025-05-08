@@ -65,4 +65,26 @@ emprestimos_biblioteca.value_counts()
      
 id_emprestimo  codigo_barras  data_renovacao                 data_
 
+0	709684	L095049	NaN	2010/01/04 07:44:10.721000000	2010/01/05 16:26:12.662000000	2.008023e+09	ALUNO DE GRADUAÇÃO
+1	709685	L167050	NaN	2010/01/04 07:44:10.750000000	2010/01/12 07:34:13.934000000	2.008023e+09	ALUNO DE GRADUAÇÃO
+2	709686	2006017618	2010/01/26 08:07:01.738000000	2010/01/04 08:08:44.081000000	2010/02/25 07:36:25.800000000	2.008112e+09	ALUNO DE PÓS-GRADUAÇÃO
+3	709687	L184117	2010/01/18 11:07:46.470000000	2010/01/04 08:24:21.284000000	2010/02/03 08:58:45.692000000	2.007211e+08	ALUNO DE GRADUAÇÃO
+8	709688	2007027500	2010/01/19 15:59:26.464000000	2010/01/04 08:27:33.569000000	2010/02/03 13:06:30.662000000	2.009046e+09	ALUNO DE GRADUAÇÃO
+Importando mais dados
+
+dados_exemplares = pd.read_parquet('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/raw/main/Dia_1-Importando_dados/Datasets/dados_exemplares.parquet')
+dados_exemplares
+     
+id_exemplar	codigo_barras	colecao	biblioteca	status_material	localizacao	registro_sistema
+0	5	
+
+Unindo os DataFrames
+
+emprestimos_completo = emprestimos_biblioteca.merge(dados_exemplares)
+emprestimos_completo
+     
+id_emprestimo	codigo_barras	data_renovacao	data_emprestimo	data_devolucao	matricula_ou_siape	tipo_vinculo_usuario	id_exemplar	colecao	biblioteca	status_material	localizacao	registro_sistema
+0	709684	L095049	NaN	2010/01/04 07:44:10.721000000	2010/01/05 16:26:12.662000000	2.008023e+09	ALUNO DE GRADUAÇÃO	13259	Acervo Circulante	Biblioteca Central Zila Mamede	REGULAR	630	4225
+1	726965	L095049	2010/03/31 12:41:08.684000000	2010/03/01 12:40:56.212000000	2010/04/30 14:42:35.366000000	2.009122e+09	ALUNO DE PÓS-GRADUAÇÃO	13259	Acervo Circulante	Biblioteca Central Zila Mamede	REGULAR	630	4225
+2	709685	L167050
 
