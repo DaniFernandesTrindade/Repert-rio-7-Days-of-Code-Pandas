@@ -1,0 +1,68 @@
+
+Dia 1 - Importação de dados
+
+import pandas as pd
+     
+Coletando dados
+
+dados_2010_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20101.csv?raw=true')
+dados_2010_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20102.csv?raw=true')
+dados_2011_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20111.csv?raw=true')
+dados_2011_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20112.csv?raw=true')
+dados_2012_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20121.csv?raw=true')
+dados_2012_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20122.csv?raw=true')
+dados_2013_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20131.csv?raw=true')
+dados_2013_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20132.csv?raw=true')
+dados_2014_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20141.csv?raw=true')
+dados_2014_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20142.csv?raw=true')
+dados_2015_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20151.csv?raw=true')
+dados_2015_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20152.csv?raw=true')
+dados_2016_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20161.csv?raw=true')
+dados_2016_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20162.csv?raw=true')
+dados_2017_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20171.csv?raw=true')
+dados_2017_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20172.csv?raw=true')
+dados_2018_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20181.csv?raw=true')
+dados_2018_2 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20182.csv?raw=true')
+dados_2019_1 = pd.read_csv('https://github.com/FranciscoFoz/7_Days_of_Code_Alura-Python-Pandas/blob/main/Dia_1-Importando_dados/Datasets/dados_emprestimos/emprestimos-20201.csv?raw=true')
+
+Concatenando os DataFrames
+
+emprestimos_biblioteca = pd.concat([dados_2010_1,dados_2010_2,dados_2011_1,dados_2011_2,dados_2012_1,dados_2012_2,dados_2013_1,dados_2013_2,dados_2014_1,
+                                    dados_2014_2,dados_2015_1,dados_2015_2,dados_2016_1,dados_2016_2,dados_2017_1,dados_2017_2,dados_2018_1,dados_2018_2,
+                                    dados_2019_1,dados_2019_2,dados_2020_1],ignore_index=True)
+emprestimos_biblioteca
+     
+id_emprestimo	codigo_barras	data_renovacao	data_emprestimo	data_devolucao	matricula_ou_siape	tipo_vinculo_usuario
+0	709684	L095049	NaN	2010/01/04 07:44:10.721000000	2010/01/05 16:26:12.662000000	2.008023e+09	ALUNO DE GRADUAÇÃO
+1	709685	L167050	NaN	2010/01/04 07:44:10.750000000	2010/01/12 07:34:13.934000000	2.008023e+09	ALUNO DE GRADUAÇÃO
+2	709686	2006017618	2010/01/26 08:07:01.738000000	2010/01/04 08:08:44.081000000	2010/02/25 07:36:25.800000000	2.008112e+09	ALUNO DE PÓS-GRADUAÇÃO
+3	709687	L184117	2010/01/18 11:07:46.470000000	2010/01/04 08:24:21.284000000	2010/02/03 08:58:45.692000000	2.007211e+08	ALUNO DE GRADUAÇÃO
+4	709684	L095049	NaN	2010/01/04 07:44:10.721000000	2010/01/05 16:26:12.662000000	2.008023e+09	ALUNO DE GRADUAÇÃO
+...	...	
+2258013	2989086	2008047044	NaN	2020/05/05 19:51:06.059000000	2021/05/13 14:53:31.000000000	3.067431e+06	SERVIDOR TÉCNICO-ADMINISTRATIVO
+2258014	2989087	2008047047	NaN	2020/05/05 19:51:06.135000000	2021/05/13 14:53:38.000000000	3.067431e+06	SERVIDOR TÉCNICO-ADMINISTRATIVO
+2258015	2989088	2010052905	NaN	2020/05/05 19:51:06.164000000	2021/05/13 15:01:46.000000000	3.067431e+06	SERVIDOR TÉCNICO-ADMINISTRATIVO
+2258016	2989089	2010048023	NaN	2020/06/09 11:54:02.669000000	2021/07/21 15:33:55.000000000	2.020101e+10	ALUNO DE PÓS-GRADUAÇÃO
+2258017	2989090	2013106838	NaN	2020/06/09 11:54:02.852000000	2021/07/21 15:33:45.000000000	2.020101e+10	ALUNO DE PÓS-GRADUAÇÃO
+2258018 rows × 7 columns
+
+Verificando duplicatas
+
+emprestimos_biblioteca.value_counts()
+     
+id_emprestimo  codigo_barras  data_renovacao                 data_emprestimo                data_devolucao                 matricula_ou_siape  tipo_vinculo_usuario  
+709704         2006021442     2010/01/17 18:56:43.923000000  2010/01/04 09:58:46.522000000  2010/02/01 13:59:02.528000000  2.008010e+09        ALUNO DE GRADUAÇÃO        7
+709705         2009032168     2010/01/17 18:56:43.909000000  2010/01/04 09:58:46.549000000  2010/01/20 13:14:34.464000000  2.008010e+09        ALUNO DE GRADUAÇÃO        7
+709698         2009047725     2010/01/18 14:44:41.163000000  2010/01/04 09:21:19.099000000  2010/02/02 12:02:38.444000000  2.009047e+09        ALUNO DE GRADUAÇÃO        3
+709686         2006017618     2010/01/26 08:07:01.738000000  2010/01/04 08:08:44.081000000  2010/02/25 07:36:25.800
+
+Excluindo duplicatas
+
+emprestimos_biblioteca = emprestimos_biblioteca.drop_duplicates()
+     
+
+emprestimos_biblioteca.value_counts()
+     
+id_emprestimo  codigo_barras  data_renovacao                 data_
+
+
