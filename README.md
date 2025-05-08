@@ -15,7 +15,7 @@ A atividade teve como objetivo introduzir os conceitos básicos da lógica de pr
 ## 📁 Estrutura do Projeto
 
 ```
-Separei em pastas casa uma dedicada a um dia do projeto, para que assim possa deixar registrado cada passo!
+EM BREVE!!
 ```
 
 ---
